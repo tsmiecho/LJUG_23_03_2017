@@ -11,8 +11,12 @@ import javaslang.collection.List;
 public class LJUG {
     public static void main(String[] args) throws Exception {
 
-        List.of("Hello Łódź JUG")
-          .forEach(System.out::println);
+        final String result = List
+          .of("Hello", "Łódź", "JUG")
+          .intersperse(" ").append("!!!")
+          .reduceLeftOption((s, s2) -> s + s2)
+          .getOrElseThrow(() -> new IllegalStateException(";___;"));
 
+        System.out.println(result);
     }
 }
