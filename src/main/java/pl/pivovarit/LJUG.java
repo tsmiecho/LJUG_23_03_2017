@@ -13,6 +13,7 @@ public class LJUG {
 
         final String result = List
           .of("Hello", "Łódź", "JUG")
+          .map(String::toUpperCase)
           .intersperse(" ").append("!!!")
           .reduceLeftOption((s, s2) -> s + s2)
           .getOrElseThrow(() -> new IllegalStateException(";___;"));
