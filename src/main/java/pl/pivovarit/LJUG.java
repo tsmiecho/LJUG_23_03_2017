@@ -1,5 +1,6 @@
 package pl.pivovarit;
 
+import javaslang.collection.List;
 
 /**
  * Grzegorz Piwowarek
@@ -10,6 +11,8 @@ package pl.pivovarit;
 public class LJUG {
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Hello");
+        List.of("Hello Łódź JUG")
+          .forEach(System.out::println);
+
     }
 }
