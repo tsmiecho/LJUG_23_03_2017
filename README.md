@@ -26,6 +26,6 @@ Match -> of
 Problemy kiedy chce się używać JavaSlang z jakimś zewnętrznymi Frameworkami. Np. Hibernate
 Caly czas trzebaby konwertowac kolekcje z javowych na slangowe
 
-Olek Szalajew perzystentne kolekcja
+Olek Szalajew persystentne kolekcja
 
 Na JavaSlang są testy wydajności kolekcji w porównaniu do scala,kotlin....
